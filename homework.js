@@ -1,169 +1,225 @@
 export const homework = function () {
-    let chose=prompt("Введите номер задания");
+    //constant
+    const myObject = {
+        key1: "value1",
+        key2: "value2"
+    };
 
-    const a = 'true';
-    const b = false;
-    const c = 17;
-    const d = undefined;
-    const e = null;
+    const objectTask2={
+        key1: "value",
+        key2:"value2"
+    };
 
-    const height = 15;
-    const width = 20
+    const student = {
+        name: 'John',
+        age: 19,
+        isHappy: true
+    };
 
-    let arr = Array();
+    const colors = {
+        'ru pum pu ru rum': {
+            red: 'красный',
+            green: 'зеленый',
+            blue: 'синий'
+        },
+    };
 
-    const key = true;
-    const documents = true;
-    const pen = true;
-    const apple = false;
-    const orange = true;
+    const user = {};
 
-    const str = "пОлИнА нАбЕрЕжНаЯ";
+    //endConstant
 
+    //functions
+    function getSum(number) {
+        let sum = 0;
+
+        for (let i = 0; i <= number; i++) {
+            sum += i;
+        }
+
+        return sum;
+    }
+    function calculateInterest(loanAmount) {
+        const interestRate = 0.17;
+        const years = 5;
+
+        const totalInterest = loanAmount * interestRate * years;
+
+        return totalInterest;
+    }
+
+    function trimString(str, from, to) {
+        return str.slice(from, to + 1);
+    }
+
+    function getSum(a, b) {
+        if (a === b) {
+            return a;
+        }
+
+        let sum = 0;
+        const start = Math.min(a, b);
+        const end = Math.max(a, b);
+
+        for (let i = start; i <= end; i++) {
+            sum += i;
+        }
+
+        return sum;
+    }
+
+    function fooboo (checkName,foo,boo)
+    {
+        const result = checkName?foo():boo();
+
+    }
+
+    function foo() {
+        console.log("foo");
+    }
+
+    function boo() {
+        console.log("boo");
+    }
+
+    function validateLoginAndPassword(login, password) {
+        if (!login || !password) {
+            return false;
+        }
+
+        if (login.length < 6 || password.length < 6) {
+            return false;
+        }
+
+        return true;
+    }
+    //endFunctions
+
+    let chose = prompt("Введите номер задания");
     switch (chose)
     {
         case 1:
         {
-            console.log(`Тип: ${typeof(a)}\nТип: ${typeof(b)}\nТип: ${typeof(c)}\nТип: ${typeof(d)}\nТип: ${typeof(e)}\n`);
+            const result = getSum(100);
+            console.log(result);
             break;
         }
         case 2:
         {
-            let maxNumber = (height > width) ? height : width;
-            console.log("Наибольшее число: " + maxNumber);
+            const loanAmount = 10000;
+            const interest = calculateInterest(loanAmount);
+            console.log(interest);
             break;
         }
         case 3:
         {
-            for(let i=1;i<=20;i++) {
-                if(i%3===0)
-                {
-                    arr.push(i);
-                }
-            }
-            console.log(arr);
+            const inputString = "Hello, world!";
+            const trimmedString = trimString(inputString, 7, 11);
+            console.log(trimmedString);
             break;
         }
         case 4:
         {
-            let allItemsIsTaken = (key && documents && pen) && (apple || orange);
-            console.log(allItemsIsTaken);
+            console.log(getSum(-1, 2));
             break;
         }
         case 5:
         {
-            let questionUser = prompt("Введите число");
-
-            if(questionUser%5===0 && questionUser%3===0) {
-                console.log("FizBuz");
-            }
-
-            else if(questionUser%5===0) {
-                console.log("Fiz");
-            }
-
-            else if(questionUser%3===0) {
-                console.log("Buz");
-            }
+            fooboo(true, foo, boo);
             break;
         }
+
+        //startHw2
         case 6:
         {
-            let ageUser = prompt("Введите ваш возраст");
+            console.log(myObject);
 
-            if(ageUser>18)
-            {
-                console.log("Попей пивка");
-            }
-            else if(ageUser>=16 || ageUser<=18)
-            {
-                console.log("Можешь выкурить сигаретку, только маме не говори");
+            delete myObject.key1;
+            delete myObject.key2;
 
-            }
-            else
-            {
-                console.log("Пей колу");
-            }
+            console.log(myObject);
             break;
         }
         case 7:
         {
-            let flag = true;
-            while(flag) {
-                let chooseForExercise = prompt("Введите сторону света");
-                switch (chooseForExercise) {
-                    case 'юг': {
-                        console.log("на юг пойдешь счастье найдешь");
-                        flag=true;
-                        break;
-                    }
-                    case 'север': {
-                        console.log("на север пойдешь много денег найдешь");
-                        flag=true;
-                        break;
-                    }
-                    case 'запад': {
-                        console.log("на запад пойдешь верного друга найдешь");
-                        flag=true;
-                        break;
-                    }
-                    case 'восток': {
-                        console.log("на восток пойдешь разработчиком станешь");
-                        flag=true;
-                        break;
-                    }
-                    default:
-                    {
-                        console.log("Неправильный ввод");
-                        flag=true;
-                        break;
-                    }
-                }
+            if(objectTask2.key1=="value")
+            {
+                console.log(true);
+            }
+            else
+            {
+                console.log(false);
             }
             break;
         }
         case 8:
         {
-            alert(str.toLowerCase());
+            console.log("Keys:");
+            for (let key in student) {
+                console.log(key);
+            }
+
+            console.log("Values:");
+            for (let key in student) {
+                console.log(student[key]);
+            }
+
             break;
         }
         case 9:
         {
-            let number = prompt("Введите число:");
-            let result = Number(number);
-
-            let subtract = prompt("Сколько отнять от предыдущего результата?");
-            result -= Number(subtract);
-
-            let add = prompt("Сколько прибавить к предыдущему результату?");
-            result += Number(add);
-
-            let multiply = prompt("На сколько умножить предыдущий результат?");
-            result *= Number(multiply);
-
-            let divide = prompt("На сколько разделить предыдущий результат?");
-            result /= Number(divide);
-
-            let formula = `(((((${number} - ${subtract}) + ${add}) * ${multiply}) / ${divide}) = ${result})`;
-            alert(formula);
-
+            console.log(colors["ru pum pu ru rum"].red + " " + colors["ru pum pu ru rum"].blue);
             break;
-
         }
         case 10:
         {
-            for (let i = 1; i <= 6; i++) {
-                let row = '';
+            let salaries = {
+                andrey: 500,
+                sveta: 413,
+                anton: 987,
+                roma: 664,
+                alexandra: 199
+            };
 
-                for (let j = 1; j <= i; j++) {
-                    row += '#';
-                }
+            let sum = 0;
+            let count = 0;
 
-                console.log(row);
+            for (let employee in salaries) {
+                sum += salaries[employee];
+                count++;
             }
+
+            const averageSalary = sum / count;
+
+            console.log(averageSalary);
+
             break;
         }
+        case 11:
+        {
+            const login = prompt("Введите логин:");
+            const password = prompt("Введите пароль:");
 
+            if (validateLoginAndPassword(login, password)) {
+                user.login = login;
+                user.password = password;
+
+                const confirmationLogin = prompt("Подтвердите логин:");
+                const confirmationPassword = prompt("Подтвердите пароль:");
+
+                if (
+                    confirmationLogin === user.login &&
+                    confirmationPassword === user.password
+                ) {
+                    console.log("Добро пожаловать!");
+                } else {
+                    console.log("Неправильный логин или пароль.");
+                }
+            } else {
+                console.log("Некорректный логин или пароль.");
+            }
+
+            break;
+        }
     }
 
 }
