@@ -1,8 +1,8 @@
 import './style.css'
-// import init from './EXAMPLE_IMPORTANT.js';
-import { compareExamples, test } from './example.js'
-import { newTest } from "./test.js";
+
+import { hW2 } from './hw2.js';
+
 
 // init();
-compareExamples();
-test();
+
+hW2();
