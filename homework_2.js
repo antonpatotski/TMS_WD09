@@ -90,11 +90,10 @@ export function homework(){
 
     function advancedTask1(){
         let name = 'пОлИнА нАбЕрЕжНаЯ';
-        name = name.toLowerCase();
-        name = name.split(" ");
-        name[0] = name[0].replace(name[0][0], 'П');
-        name[1] = name[1].replace(name[1][0], 'Н');
-        name = name.join(" ");
+        name = name
+            .split(' ')
+            .map((letter) => `${letter[0].toUpperCase()}${letter.slice(1).toLowerCase()}`)
+            .join(' ');
         alert(`Привет, ${name}`);
     }
 
