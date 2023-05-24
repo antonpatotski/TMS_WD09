@@ -93,22 +93,21 @@ export function home4() {
     //
     // > Если переданное булевое значение **true** запускаем функцию **foo** иначе **boo**
 
+    function foo () {
+        console.log(` Function name - ${foo.name}`)
+    }
+    function boo () {
+        console.log(` Function name - ${boo.name}`)
+    }
+    function fooboo(boolean, functionFoo ,functionBoo ) {
 
-    // function fooboo(someVar, foo ,boo ) {
-    //     foo = function () {
-    //          console.log(foo.name)
-    //     }
-    //
-    //     boo = function () {
-    //         console.log(boo.name)
-    //     }
-    //     if (someVar === true) {
-    //         foo()
-    //     } else {
-    //         boo()
-    //     }
-    // }
-    // fooboo(`ghj`,``,``)
+        if (boolean) {
+            functionFoo()
+        } else {
+            functionBoo()
+        }
+    }
+    fooboo(true,foo,boo)
 
 
     // + Реализуйте функцию, который принимает 3 целочисленных значения a, b, c. Функция должна возвращать **true**,
@@ -188,4 +187,4 @@ export function home4() {
     if (amount > balance) {
         console.log(`Вы не можете позволить себе эту покупку.`);
     }
-}
+    }

@@ -56,23 +56,23 @@ export function home5() {
     //Создать валидатор, запросить у пользователя логин и пароль для регистрации. Затем данные записать в обьект.
     //Потом попросить пользователя подтвердить данные. Если верно введен логин и пароль, вывести сообщение **Добро пожалоВать**.
 
-    // const loginValue = prompt('Введите логин');
-    // const passwordValue = prompt('введите пароль');
-    //
-    // const registration = {
-    //     login: loginValue,
-    //     password: passwordValue
-    // }
-    //
-    // let resultRegistration = confirm(`Пожалуйста, проверьте данные:
-    // Логин: ${registration.login}
-    // Пароль: ${registration.password}`)
-    //
-    // if (resultRegistration) {
-    //     alert ('Добро пожаловать!!!')
-    // } else {
-    //     alert('Упс, что-то не так')
-    // }
+    const loginValue = prompt('Введите логин');
+    const passwordValue = prompt('введите пароль');
+
+    const registration = {
+        login: loginValue,
+        password: passwordValue
+    }
+
+    let resultRegistration = confirm(`Пожалуйста, проверьте данные:
+    Логин: ${registration.login}
+    Пароль: ${registration.password}`)
+
+    if (resultRegistration) {
+        alert ('Добро пожаловать!!!')
+    } else {
+        alert('Упс, что-то не так')
+    }
 
     // Мы на футбольном матче, счет забитых голов одной команды не может превышать 9 мячей.
     // Жаль что нам присылают результат матча в формате '2:5', ведь нам надо это вывести в консоль словами.
