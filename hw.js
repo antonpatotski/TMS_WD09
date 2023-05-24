@@ -2,200 +2,286 @@
 
 export function homeWork(){
 
-    function Task1()
-    {
-        const a = "true";
-        const b = false;
-        const c = 17;
-        const d = undefined;
-        const e = null;
-    
-        console.log(typeof(a));
-        console.log(typeof(b));
-        console.log(typeof(c));
-        console.log(typeof(d));
-        console.log(typeof(e));
+    // Functions
+
+
+    // Task 1
+    function getSum(num){
+        let sum = 0; 
+        for (let i = 0; i < num + 1; i++){
+            sum += i;
+        }
+        return sum;
+    }   
+    // console.log(getSum(100));
+
+
+    // Task 2
+    // тоже в кредитах не шарю, но я так понял, что каждый год надо от всей суммы процент начислять
+    // П.с - не берите в долг и не давайте в долг С:
+    function creditResult(sumCredit){
+
+        const percentInYear = 17; 
+        const countYear = 5;
+        
+        return ((sumCredit / 100 * percentInYear ) * countYear) + sumCredit;
     }
-
-    // Task1();
-
-    function Task2()
-    {
-        const height = 15;
-        const width = 20;
-
-        if (height === width)
-        {
-            console.log("fig");
-        }
-        else if (height > width)
-        {
-            console.log(height);
-        }
-        else
-        {
-             console.log(width);
-        }
-    }
-
-    // Task2();
+    // console.log(creditResult(5000));
     
 
-    function Task3()
-    {
+    // Task 3
+    function trimString(str,from,to){
 
-        for(let i = 0; i < 20; i++)
-        {   
-            if(i % 3 === 0 && i !== 0)
-            {
-                console.log(i);  
+        return (from < 0 || to < 0 || from >= str.length || to >= str.length || from > to) ? "Try again C:" : str.slice(from,to);
+        
+    }
+    // console.log(trimString("Hi",3,6));
+    // console.log(trimString("Hello world",3,6));
+
+
+    // Task4
+    function getSumNumbers(num){
+        let sum = 0;
+        num = String(num).split("");
+        num.forEach(function(e){
+            sum += Number(e)
+        });
+        return sum;
+    }
+
+    // console.log(getSumNumbers(101));
+
+
+    // Task 5
+    function getSum(a,b){
+        let result = 0;
+        if (!Number.isInteger(a) && !Number.isInteger(b) || (a > b)){
+            result = "try again";
+        }
+        else if ( a == b){
+            result = a;
+        }
+        else{
+            for (let i = a; i < b; i++){
+                result += i;
             }
-        } 
+            result += b;
+        }
+        return result; 
+
+    }
+    // console.log(getSum(1,2));
+
+
+    // Task6
+    function foo(){
+        console.log("foo");
     }
     
-    // Task3();
-
-    function Task4()
-    {
-       let key = true;
-       let documents = true;
-       let pen = true;
-       let apple = false;
-       let orange = true;
-       let shouldGoToWork = "";
-
-       ((key && documents && pen)&&(apple || orange)) ? 
-            shouldGoToWork = "yes": 
-            shouldGoToWork = "nope";
-
-       console.log(shouldGoToWork);
-       
+    function boo(){
+        console.log("boo");
     }
 
-    // Task4();
-
-    function Task5()
-    {
-        let userNumber = prompt("write some number");
-
-        if ( userNumber % 5 === 0 && userNumber % 3 === 0)
-        {
-            console.log("FizBuz")
-        }
-        else if (userNumber % 5 === 0)
-        {
-            console.log("Fiz");
-        }
-        else if (userNumber % 3 === 0)
-        {
-            console.log("Buz");
-        }
-  
-    }
-
-    // Task5();
-
-    function Task6()
-    {
-        let userAge = prompt("write your age");
-
-        if (userAge > 18)
-        {
-            console.log("Go drink beer");
-        }
-        else if (userAge >= 16 && userAge <= 18)
-        {
-            console.log("Go smoke, but don't tell it your mom");
-        }
-        else
-        {
-            console.log("Go drink 'cola'");
-        }
-    }
-
-    // Task6();
-
-    function Task7()
-    {
-        let userTravel = prompt("Type N, W, E or S");
-        userTravel = userTravel.toLowerCase();
-        switch (userTravel)
-        {
-            case "n":
-                console.log("u will find a lot of money");
-                break;
-            case "w":
-                console.log("u will find a true friend");
-                break;
-            case "e":
-                console.log("u will be a developer");
-                break;
-            case "s":
-                console.log("u will be happy");
-                break;
-            default:
-                console.log("try again");
-                break;
-        }
-    }
-
-    // Task7();
-
-    function advancedTask1()
+    function fooboo(a,foo,boo)
     {   
-        // let userName = prompt("Write ur frst and last names through 'SPACE' btn:");
-        let userName = "sbuDabu BabaEzae";
-        let alertUserName = "";
-
-        userName = userName.toLowerCase();
-
-        let userNameSplit = userName.split(" ");
         
-  
-        for(let i = 0; i < userNameSplit.length; i++)
-        {   
-            if(userNameSplit.length - 1 === i)
-            {          
-                alertUserName += userNameSplit[i][0].toUpperCase() + userNameSplit[i].slice(1);
-            }
-            else
-            {
-                alertUserName += userNameSplit[i][0].toUpperCase() + userNameSplit[i].slice(1) + " ";
-            }
-           
-            
+        (typeof a === "boolean")? ((a)?console.log("1"):console.log("2")): console.log("try again");
+    }
+    // fooboo(f,foo,boo);
+
+    // Task 1 ADVANCED
+    function advancedTask(a,b,c){
+        return !(a + b <= c || a + c <= b || b + c <= a) ?? true  
+    }
+    // console.log(advancedTask(3,3,3));
+
+    // Task 2 ADVANCED
+    function chocoBreak(n,m){     
+       return (n > 0 || m > 0) ? n * m - 1 : 0;        
+    }
+    // console.log(chocoBreak(10,2));
+
+    // Task 3 ADVANCED
+    // --undifinded-- я не хочу доделаывать эту задачу, т.к она скучная и в ней ничего нового.-.
+    const tax = 20;
+    const phonePrice = 550;
+    const phoneAccessory = 30;
+    let money = 3000;
+
+    function moneyDestroyer(){
+        const oncePay = (phonePrice + phoneAccessory) + (phonePrice + phoneAccessory) / 100 * tax;
+        let countGoods = 1;
+        let purchaseAmount = 0;
+        while((money - oncePay) > 0){       
+            money -= oncePay;
+            purchaseAmount += oncePay;
+            countGoods += 1;        
         }
-        alert(`Hello, ${alertUserName}!`);
+        console.log(`U can purchase is ${countGoods} phones with accessories.
+                    Purchase amount is ${purchaseAmount}.
+                    U will have ${money} $ left`);       
+    
+    }
+
+    // moneyDestroyer();
+    
+
+    // Objects
+
+    // Task 1
+    const obj = {
+        name: "Lev",
+        age: 27,
+    }
+
+    // console.log(obj.name);
+    // delete obj.name;
+    // console.log(obj.name);
+
+    // Task 2 
+    const objTwo = {
+        name: "banana",
+        size: 30,
+    }
+    // console.log(objTwo.name? true : false);
+
+    // Taks 3
+    const student = {
+        name: "Jhon",
+        age: 19,
+        isHappy: true,
+    }
+    // непонятно зачем по очереди надо вывести, почему нельзя сразу ٩(˘◡˘)۶
+    // for(let key in student){
+    //     console.log(`${key}`)
+    // }
+    // for(let key in student){
+    //     console.log(`${student[key]}`)
+    // }
+    
+
+    // Task 4
+    const colors = {
+        'ru pum pu ru rum': {
+            red: 'красный',
+            green: 'зеленый',
+            blue: 'синий'
+        },
+    };
+    
+    // ты на разборе дз сказал, что на месте рум пум пум должно быть что угодно,
+    // но я думаю, что тут ключевое именно в то, что название обьекта выведено строкой,
+    // по этмоу я сделаю так как написано в задании, ведь упраженение на for in выше было ʕ•́ᴥ•̀ʔっ
+ 
+
+    // console.log(colors['ru pum pu ru rum'].red, "и", colors['ru pum pu ru rum'].blue);
+
+    // Task 5
+    const salaries = {
+        andrey: 500,
+        sveta: 413,
+        anton: 987,
+        andrey: 664,
+        alexandra: 199
+    }
+
+    let averageSalary = 0;
+    let sum = 0;
+
+    // for (let key in salaries){
+    //      sum += salaries[key];
+    // }
+
+    // averageSalary = sum / Object.keys(salaries).length;
+    // console.log(averageSalary);
+
+
+    // Task 6
+    const registerProperty = {
+        login: "",
+        pass: "",
+   
+
+        validate: function(login,pass){
+            (login === this.login && pass === this.pass) ? alert("all right"):alert("try again");        
+        },
+    }
+
+   
+    // registerProperty.login = prompt("write new login");
+    // registerProperty.pass = prompt("write new pass");
+
+    // const login = prompt("write ur login");
+    // const pass = prompt("wirte ur pass");
+
+    // registerProperty.validate(login,pass);
+
+    // Task 1 ADVANCED
+    // не больше 9 мячей, пинять формат 2:2 , вывести в консоль словами,
+    function sayScore(strScore){
+        let scoreArr = strScore.split(":");
+        const strArr = ["zero","one","two","three","four","five","six","seven","eight","nine"];
+
+        return ( scoreArr[0] > 9 || scoreArr[1] > 9 || scoreArr[0] < 0 || scoreArr[1] < 0)?         
+        ("try again"):`${strArr[Number(scoreArr[0])]} vs ${strArr[Number(scoreArr[1])]}`;
         
     }
 
-    // advancedTask1();
+    // console.log(sayScore("1:4"));
 
-    function advancedTask2()
-    {
-        let frstNum = prompt("Write some number:");
-        let subNum = prompt("How much to subtract:");
-        let sumNum = prompt ("How much to add:");
-        let mltpNum = prompt ("How much to multiply:");
-        let dvdNum = prompt ("How much to divide:");
-        let result = ((frstNum-subNum)+sumNum) * mltpNum / dvdNum;  
-        alert(`((${frstNum} - ${subNum}) + ${sumNum}) * ${mltpNum} / ${dvdNum} = ${result}`);   
+    // Task 2 ADVANCED
+
+    const student1 = {
+        name: 'Polina',
+        age: 27,
     }
 
-    // advancedTask2();
+    const student2 = {
+        name: 'Polina',
+        age: 27,
+        
+    }
 
-    function advancedTask3()
-    {
-        let rowCount = prompt("Enter the number of lines:");
-        let grid = "";
+    function isEqual(obj1,obj2){
 
-        for (let i = 0; i < rowCount; i++)
-        {   
-            grid += "#";
-            console.log(grid);
+        const keys1 = Object.keys(obj1);
+        const keys2 = Object.keys(obj2);
+
+        if (keys1.length !== keys2.length){
+            return false
+        }
+
+        for (let key in obj1){       
+            if(obj1[key] !== obj2[key]){
+                return false;
+            }
+        }
+        
+        return true;
+    
+    }
+
+    // console.log(isEqual(student1,student2));
+
+    // Task 3 ADVANCED 
+    const animals = {
+        cat: {
+           name: 'Енчик',
+           age: 3,
+        },
+        dog: {
+           name: 'Орео',
+           age: 2,
         }
     }
+    
+    // console.log(animals?.bird?.name);
+    
 
-    // advancedTask3();
+    
+
+
+
+
 
 }
