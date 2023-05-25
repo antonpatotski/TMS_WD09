@@ -1,8 +1,5 @@
-import './style.css'
-import { hW2 } from './hw2.js';
+import * as lessonsExamples from "./LESSON/LESSON_4/examples.js";
+import * as hw from "./HOMEWORK";
 
-
-// init();
-
-hW2();
-
+hw.yourFuncName();
+// lessonsExamples.lesson_4();
