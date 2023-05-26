@@ -1,8 +1,9 @@
-import { yourFuncName as ANTONY_TEST_HW_4 } from "./YOUR_NAME_AND_LAST_NAME/hw_4.js";
 
-
+import {home4 as ROMAN_SEMENYK_HW_4} from "./RomanSemenyk/hw_4.js";
+import {home5 as ROMAN_SEMENYK_HW_5} from "./RomanSemenyk/hw_5.js";
 
 // Не забывайте импортить и экспортить вашу функцию
 export {
-  ANTONY_TEST_HW_4
+  ROMAN_SEMENYK_HW_4,
+  ROMAN_SEMENYK_HW_5
 }
