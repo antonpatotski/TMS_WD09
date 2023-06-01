@@ -1,7 +1,13 @@
-import * as ROMAN_SEMENYK_HW from './RomanSemenyk';
-import * as TEST_TEMPLATE from './YOUR_NAME_AND_LAST_NAME'
 
+import { hW2 as Siarhei_Bichukov_HW_2} from "./Siarhei_Bichukov/hw2.js";
+import { hW3 as Siarhei_Bichukov_HW_3} from "./Siarhei_Bichukov/hw3.js";
+
+
+// Не забывайте импортить и экспортить вашу функцию
 export {
-  ROMAN_SEMENYK_HW,
-  TEST_TEMPLATE
+  //Siarhei_Bichukov_HW_2,
+  Siarhei_Bichukov_HW_3,
+
+
 }
+
