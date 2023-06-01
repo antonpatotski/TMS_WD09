@@ -1,11 +1,6 @@
-import * as lessonsExamples from "./LESSON/LESSON_4/examples.js";
-import * as hw from "./HOMEWORK";
+// DO NOT COMMIT ON THIS FILE. CHANGES ONLY IN YOUR BRANCH. THEN DELETE
+import * as bootstrap from 'bootstrap';
+import * as lessonsExamples from "./LESSON";
+import * as HOMEWORK from "./HOMEWORK";
+import './style.scss';
 
-// hw.ANTONY_TEST_HW_4();
-// // lessonsExamples.lesson_4();
-// hw.VIKA_ZHURAULIOVA_HW_2();
-// hw.VIKA_ZHURAULIOVA_HW_4();
-// hw.VIKA_ZHURAULIOVA_HW_5();
-// hw.VIKA_ZHURAULIOVA_HW_6();
-// hw.VIKA_ZHURAULIOVA_HW_7();
-hw.VIKA_ZHURAULIOVA_ADDITION();
