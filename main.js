@@ -8,6 +8,6 @@ import './style.scss';
 
 HOMEWORK.TEST_TEMPLATE.yourFuncName()
 
-lessonsExamples.lesson_6();
+// lessonsExamples.lesson_6();
 
 // console.log(bootstrap)
