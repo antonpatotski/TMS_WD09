@@ -11,9 +11,12 @@ export function home5() {
         return `member ${index + 1}: ${name}`;
     }
 
+
+    // abcba - palindrome
+    // abccda - palindrome
+    // abcaba - nope
     function isPalindrome(word) {
-        const cleanedWord = word.toLowerCase().replace(/\s/g, '');
-        const length = cleanedWord.length;
+        const length = word.length;
 
         for (let i = 0; i < length / 2; i++) {
             if (cleanedWord[i] !== cleanedWord[length - 1 - i]) {
