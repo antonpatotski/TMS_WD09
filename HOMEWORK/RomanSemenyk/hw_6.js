@@ -12,6 +12,7 @@ export function home6() {
     deleteButton.textContent = "Delete All";
     cont.appendChild(deleteButton);
 
+
     const enterTodo = document.createElement("input");
     enterTodo.id = "inputTodo";
     enterTodo.value = "Enter todo.."
