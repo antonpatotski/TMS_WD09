@@ -1,0 +1,85 @@
+.container {
+  max-width: 50%;
+}
+.container-wrap {
+  padding: 25px 60px 100px 60px;
+  border: 3px solid #000000;
+  border-radius: 30px;
+  background-color: #EEEEEE;
+}
+
+.first-line {
+  gap: 27px;
+  margin-bottom: 60px;
+
+  &-btn {
+    background-color: #17E7CF;
+    border: 3px solid #000000;
+    border-radius: 13px;
+    padding: 25px 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5E5D5E;
+  }
+
+  &-input {
+    border: 3px solid #000000;
+    background-color: transparent;
+    border-radius: 13px;
+    height: 100%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5E5D5E;
+  }
+}
+
+.second {
+  gap: 25px;
+}
+.second-line {
+  border: 3px solid #000000;
+  background-color: transparent;
+  border-radius: 26px;
+  padding: 25px;
+
+  &-input {
+    width: 100%;
+    padding: 24px 0;
+
+    background-color: #ffffff;
+  }
+  &-check {
+
+    &-mark {
+      width: 67px!important;
+      height: 45px!important;
+    }
+  }
+}
+
+.cancel {
+  gap: 30px;
+}
+.cancel-cross {
+  background-color: #17E7CF;
+  border-radius: 8px;
+  border: 3px solid #000000;
+  padding: 0 35px;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #5E5D5E;
+}
+
+.cancel-text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #5E5D5E;
+}
