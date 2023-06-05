@@ -4,4 +4,4 @@ import * as lessonsExamples from "./LESSON";
 import * as HOMEWORK from "./HOMEWORK";
 import './style.scss';
 
-lessonsExamples.lesson_7();
+// lessonsExamples.lesson_7();
