@@ -1,0 +1,45 @@
+.AZ{
+  &-input{
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    color: black;
+  }
+  &-list-container{
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  &-date-container{
+    padding: 5px 20px;
+    margin: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px
+  }
+  &-br-10{
+    border-radius: 10px;
+  }
+  &-b-solid{
+    border: 1px solid black;
+  }
+  &-lightgrey{
+    background-color: lightgray;
+  }
+  &-darkgrey{
+    background-color: darkgray;
+  }
+  &-w-100{
+    width: 100%;
+  }
+  &-btn{
+    &-p{
+      padding: 5px 10px;
+    }
+    &-m-left{
+      margin-left: 15px;
+    }
+    &-m-rigth{
+      margin: 15px 15px 30px auto;
+    }
+  }
+}
