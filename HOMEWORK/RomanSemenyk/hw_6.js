@@ -26,7 +26,7 @@ export function home6() {
     cont.appendChild(addButton)
 
     const borderFirst = document.createElement("div");
-    borderFirst.id="borderFirst";
+    borderFirst.classList.add("borderFirst");
     cont.appendChild(borderFirst);
 
     const buttonCheck = document.createElement("button");
@@ -52,7 +52,7 @@ export function home6() {
 
 
     const borderSecond = document.createElement("div");
-    borderSecond.id="borderFirst";
+    borderSecond.classList.add("borderFirst");
     cont.appendChild(borderSecond);
 
     const buttonCheck2 = document.createElement("button");
@@ -75,6 +75,11 @@ export function home6() {
     buttonCancel2.textContent="X"
     borderSecond.appendChild(buttonCancel2);
 
+    addButton.addEventListener('click',function (){
+        const card = document.createElement('div');
+        card.classList.add('card');
+        container.appendChild(card);
+    })
 
 
 
