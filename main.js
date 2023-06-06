@@ -1,9 +1,7 @@
-import * as lessonsExamples from "./LESSON/LESSON_4/examples.js";
-import * as hw from "./HOMEWORK";
-import {ROMAN_SEMENYK_HW_4} from "./HOMEWORK";
-import {ROMAN_SEMENYK_HW_5} from "./HOMEWORK";
-import {ROMAN_SEMENYK_HW_6} from "./HOMEWORK";
+// DO NOT COMMIT ON THIS FILE. CHANGES ONLY IN YOUR BRANCH. THEN DELETE
+import * as bootstrap from 'bootstrap';
+import * as lessonsExamples from "./LESSON";
+import * as HOMEWORK from "./HOMEWORK";
+import './style.scss';
 
-
-
-hw.ROMAN_SEMENYK_HW_6();
+// lessonsExamples.lesson_7();
