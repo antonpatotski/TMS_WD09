@@ -4,5 +4,4 @@ import * as lessonsExamples from "./LESSON";
 import * as HOMEWORK from "./HOMEWORK";
 import './style.scss';
 
-
-HOMEWORK.VIKA_ZHURAULIOVA_HW.VIKA_ZHURAULIOVA_HW_8();
+// lessonsExamples.lesson_7();
