@@ -27,7 +27,7 @@ export const home8 = () => {
                                 </div>
                             </div>
                             <div class="col-9">
-                                < class="w-100 first-line-input text-center second-line-input" placeholder="Enter todo ..."> 
+                                <input class="w-100 first-line-input text-center second-line-input" placeholder="Enter todo ..."> 
                             </div>
                             <div class="col">
                                 <div class="cancel d-flex flex-column align-items-center">
