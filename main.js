@@ -5,3 +5,4 @@ import * as HOMEWORK from "./HOMEWORK";
 import './style.scss';
 
 // lessonsExamples.lesson_7();
+HOMEWORK.ROMAN_SEMENYK_HW.ROMAN_SEMENYK_HW_7();
