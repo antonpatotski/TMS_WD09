@@ -1,11 +1,13 @@
 .container {
   max-width: 50%;
+
 }
 .container-wrap {
   padding: 25px 60px 100px 60px;
   border: 3px solid #000000;
   border-radius: 30px;
   background-color: #EEEEEE;
+  min-height: 500px;
 }
 
 .first-line {
@@ -46,6 +48,7 @@
   background-color: transparent;
   border-radius: 26px;
   padding: 25px;
+  margin-bottom: 15px;
 
   &-input {
     width: 100%;
@@ -68,7 +71,7 @@
 
 .cancel-text {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 18px;
   line-height: 39px;
   color: #5E5D5E;
 }
@@ -82,4 +85,13 @@
 }
 .m-30 {
   margin-bottom: 30px;
+}
+.check{
+  border: 3px solid #000000;
+  border-radius: 26px;
+  padding: 25px;
+  margin-bottom: 15px;
+
+  background-color: #A53030;
+  text-decoration: line-through;
 }
