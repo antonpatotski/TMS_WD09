@@ -1,12 +1,13 @@
-import { yourFuncName as ANTONY_TEST_HW_4 } from "./YOUR_NAME_AND_LAST_NAME/hw_4.js";
-
-import * as ROMAN_SEMENYK_HW from './RomanSemenyk';
-import * as TEST_TEMPLATE from './YOUR_NAME_AND_LAST_NAME';
-import * as VIKA_ZHURAULIOVA_HW from './VIKA_ZHURAULIOVA'
-
+import { hW2 as Siarhei_Bichukov_HW_2} from "./Siarhei_Bichukov/hw2.js";
+import { hW3 as Siarhei_Bichukov_HW_3} from "./Siarhei_Bichukov/hw3.js";
+import { hW4 as Siarhei_Bichukov_HW_4} from "./Siarhei_Bichukov/hw4.js";
+import { hW5 as Siarhei_Bichukov_HW_5} from "./Siarhei_Bichukov/hw5.js";
 // Не забывайте импортить и экспортить вашу функцию
 export {
-  VIKA_ZHURAULIOVA_HW,
-  ROMAN_SEMENYK_HW,
-  TEST_TEMPLATE,
+  //Siarhei_Bichukov_HW_2,
+  // Siarhei_Bichukov_HW_3,
+  //Siarhei_Bichukov_HW_4,
+  Siarhei_Bichukov_HW_5,
+
 }
+
