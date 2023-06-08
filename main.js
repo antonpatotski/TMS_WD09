@@ -1,11 +1,7 @@
-import './style.css'
-// import init from './EXAMPLE_IMPORTANT.js';
-import { compareExamples, test } from './example.js'
-import { newTest } from "./test.js";
-import { lesson3__practice } from "./js/lesson3__practice.js";
+// DO NOT COMMIT ON THIS FILE. CHANGES ONLY IN YOUR BRANCH. THEN DELETE
+import * as bootstrap from 'bootstrap';
+import * as lessonsExamples from "./LESSON";
+import * as HOMEWORK from "./HOMEWORK";
+import './style.scss';
 
-// init();
-// compareExamples();
-// test();
-
-lesson3__practice();
+// lessonsExamples.lesson_7();

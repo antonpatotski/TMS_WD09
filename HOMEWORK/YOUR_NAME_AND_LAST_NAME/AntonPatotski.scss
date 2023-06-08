@@ -1,0 +1,9 @@
+.AP {
+  &__container {
+    border: 1px solid purple;
+
+    &--red {
+      border: 1px solid red;
+    }
+  }
+}
