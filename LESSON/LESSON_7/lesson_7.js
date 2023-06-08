@@ -135,6 +135,7 @@ export const lesson_7 = () => {
     const btn = document.querySelector('.btn-add');
     const container = document.querySelector('.items');
     container.onclick = (event) => {
+      console.log('container event', event);
       if (event.target.tagName === 'BUTTON') {
         const index = event.target.dataset.index;
 
@@ -145,18 +146,21 @@ export const lesson_7 = () => {
     }
 
     const updateList = () => {
-      container.innerHTML = goods.reduce((acc, item) => {
-        return acc + `<li>
-          ${item.name}
-          <button data-index="${item.id}" class="delete-button">
-            Delete
-          </button>
-        </li>`
+      container.innerHTML = goods.reduce((acc, { name, id, completed }) => {
+        return acc + `
+          <li>
+            <input type="checkbox" checked="${completed ? 'checked' : 'unchecked'}" class="form-check-input" />
+            ${name}
+            <button data-index="${id}" class="delete-button btn btn-danger">
+              Delete
+            </button>
+          </li>
+        `
       }, '')
     }
 
     const addItem = (name) => {
-      goods.push({ name, id: Date.now() });
+      goods.push({ name, id: Date.now(), completed: false });
       updateList();
     };
     const removeItem = (idForDelete) => {
@@ -164,7 +168,8 @@ export const lesson_7 = () => {
       goods.splice(elemToDelete, 1);
     }
 
-    btn.onclick = () => {
+    btn.onclick = (event) => {
+      console.log(event)
       addItem(input.value);
     }
   }

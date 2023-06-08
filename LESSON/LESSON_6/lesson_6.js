@@ -1,4 +1,4 @@
-import styles from './AntonPatotski.scss'
+// import styles from './AntonPatotski.scss'
 
 export const lesson_6 = () => {
   function createNode({ node, attr, className, innerText }) {
@@ -54,5 +54,5 @@ export const lesson_6 = () => {
     // hw_6.append(div);
   }
 
-  InnerHtmlTest();
+  // InnerHtmlTest();
 }
