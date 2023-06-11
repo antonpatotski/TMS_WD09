@@ -174,5 +174,5 @@ export const lesson_7 = () => {
     }
   }
 
-  exerciseExample();
+  // exerciseExample();
 }

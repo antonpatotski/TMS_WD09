@@ -14,7 +14,7 @@ export const lesson_8 = () => {
     const result = fetch('https://jsonplaceholder.typicode.com/posts', { method: 'POST' })
       .then(response => response.json())
       .then(result => {
-        clearInterval(timer2)
+        clearInterval(timer2);
       })
 
     // const fetch2 = (url) => { // example what fetch is
@@ -147,7 +147,5 @@ export const lesson_8 = () => {
     })
   }
 
-  // test5();
+  test5();
 }
-
-lesson_8()
