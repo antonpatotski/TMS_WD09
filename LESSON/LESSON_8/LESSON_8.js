@@ -147,5 +147,5 @@ export const lesson_8 = () => {
     })
   }
 
-  test5();
+  // test5();
 }
