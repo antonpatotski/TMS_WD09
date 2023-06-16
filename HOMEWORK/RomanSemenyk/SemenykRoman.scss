@@ -1,0 +1,90 @@
+.checked {
+  background-color: #e1e1e1;
+}
+
+
+
+.container {
+  max-width: 50%;
+}
+.container-wrap {
+  padding: 25px 60px 100px 60px;
+  border: 3px solid #000000;
+  border-radius: 30px;
+  background-color: #eeeeee;
+}
+
+.first-line {
+  gap: 27px;
+  margin-bottom: 60px;
+
+  &-btn {
+    background-color: #17e7cf;
+    border: 3px solid #000000;
+    border-radius: 13px;
+    padding: 25px 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e5d5e;
+  }
+
+  &-input {
+    border: 3px solid #000000;
+    background-color: transparent;
+    border-radius: 13px;
+    height: 100%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e5d5e;
+  }
+}
+
+.second {
+  gap: 25px;
+}
+.second-line {
+  border: 3px solid #000000;
+  background-color: transparent;
+  border-radius: 26px;
+  padding: 25px;
+
+  &-input {
+    width: 100%;
+    padding: 24px 0;
+
+    background-color: #ffffff;
+  }
+  &-check {
+    &-mark {
+      width: 67px !important;
+      height: 45px !important;
+    }
+  }
+}
+
+.cancel {
+  gap: 30px;
+}
+
+.cancel-text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #5e5d5e;
+}
+
+.title {
+  margin-top: 100px;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+.m-30 {
+  margin-bottom: 30px;
+}
